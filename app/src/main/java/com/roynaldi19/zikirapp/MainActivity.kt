@@ -8,11 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.roynaldi19.zikirapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
-
     private var mediaPlayer: MediaPlayer? = null
-
     private var count = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             count++
             binding.tvCount.text = count.toString()
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
